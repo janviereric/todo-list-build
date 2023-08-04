@@ -26,7 +26,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* reset start */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Mulish", sans-serif;
   letter-spacing: 0.1rem;
 }
 
@@ -78,14 +78,14 @@ main {
 
 /* todo start */
 .container-todo-list {
-  border: 0.1rem solid black;
+  border: 0.1rem solid #979393;
   padding: 1rem;
 }
 
 legend {
   margin-left: auto;
   margin-right: auto;
-  font-weight: bold;
+  color: #4d4d4d;
   padding: 1rem;
 }
 
@@ -105,14 +105,14 @@ input {
   margin-bottom: 3rem;
   padding: 0.4rem 1rem;
   outline: 0;
-  border: 0.1rem solid #4444;
+  border: 0.1rem solid #979393;
   border-radius: 0.2rem;
   flex: 1;
 }
 
 .container-todo {
   margin-bottom: 2rem;
-  border: 0.1rem solid #333;
+  border: 0.1rem solid #979393;
   padding: 0.5rem;
 }
 
@@ -169,7 +169,33 @@ button:hover {
   width: 7rem;
 }
 /* button end */
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA,gBAAgB;AAChB;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,2CAA2C;EAC3C,sBAAsB;AACxB;;AAEA;EACE,qBAAqB;AACvB;AACA,cAAc;;AAEd,eAAe;AACf;EACE,eAAe;AACjB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,yBAAyB;EACzB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,eAAe;EACf,cAAc;EACd,eAAe;EACf,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,oBAAoB;EACpB,yBAAyB;EACzB,qBAAqB;AACvB;AACA,eAAe;;AAEf,cAAc;AACd;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA,YAAY;;AAEZ,eAAe;AACf;EACE,0BAA0B;EAC1B,aAAa;AACf;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,cAAc;EACd,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,6BAA6B;AAC/B;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,UAAU;EACV,0BAA0B;EAC1B,qBAAqB;EACrB,OAAO;AACT;;AAEA;EACE,mBAAmB;EACnB,yBAAyB;EACzB,eAAe;AACjB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,eAAe;AACjB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,qBAAqB;EACrB,YAAY;AACd;;AAEA;EACE,yBAAyB;EACzB,oBAAoB;EACpB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B,YAAY;AACd;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;AACb;AACA,eAAe","sourcesContent":["/* reset start */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Roboto Condensed\", sans-serif;\n  letter-spacing: 0.1rem;\n}\n\nli {\n  list-style-type: none;\n}\n/* reset end */\n\n/* body start */\nbody {\n  font-size: 10px;\n}\n/* body end */\n\n/* header start */\nheader {\n  background-color: #d35400;\n  height: 3rem;\n}\n\n.container-title-logo {\n  display: flex;\n  justify-content: center;\n}\n\n.text-title-logo {\n  font-size: 1rem;\n  color: #f5f6fa;\n  cursor: pointer;\n  padding: 0.8rem;\n  margin-top: 0.2rem;\n}\n\n.text-title-logo:hover {\n  transition: all 0.2s;\n  background-color: #e67e22;\n  border-radius: 0.2rem;\n}\n/* header end */\n\n/* main start*/\nmain {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/* main end*/\n\n/* todo start */\n.container-todo-list {\n  border: 0.1rem solid black;\n  padding: 1rem;\n}\n\nlegend {\n  margin-left: auto;\n  margin-right: auto;\n  font-weight: bold;\n  padding: 1rem;\n}\n\n.title-todo-list {\n  color: #d35400;\n  font-size: 1.2rem;\n}\n\nform {\n  display: flex;\n  justify-content: space-around;\n}\n\ninput {\n  margin-left: 1rem;\n  margin-right: 1rem;\n  margin-bottom: 3rem;\n  padding: 0.4rem 1rem;\n  outline: 0;\n  border: 0.1rem solid #4444;\n  border-radius: 0.2rem;\n  flex: 1;\n}\n\n.container-todo {\n  margin-bottom: 2rem;\n  border: 0.1rem solid #333;\n  padding: 0.5rem;\n}\n\n.title-todo {\n  font-size: 1rem;\n}\n\nli {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\nli p {\n  margin-bottom: 1rem;\n  font-size: 1rem;\n}\n/* todo end */\n\n/* button start */\nbutton {\n  border: none;\n  background-color: #d35400;\n  color: #f5f6fa;\n  font-weight: bold;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n}\n\nbutton:hover {\n  background-color: #e67e22;\n  transition: all 0.2s;\n  cursor: pointer;\n}\n\n.container-edit-delete-button {\n  display: flex;\n  justify-content: space-evenly;\n  width: 20rem;\n}\n\n.add-button {\n  margin-right: 1rem;\n}\n\n.edit-button {\n  margin-bottom: 1rem;\n  width: 7rem;\n}\n\n.delete-button {\n  width: 7rem;\n}\n/* button end */\n"],"sourceRoot":""}]);
+
+/* footer start */
+footer {
+  height: 8rem;
+  background-color: #4d4d4d;
+  color: #f5f6fa;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 1rem;
+  width: 1rem;
+  margin-bottom: -0.1rem;
+}
+
+.j {
+  font-family: "Roboto Condensed", sans-seri;
+}
+
+.e {
+  font-family: "Roboto Condensed", sans-seri;
+}
+/* footer end */
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA,gBAAgB;AAChB;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,iCAAiC;EACjC,sBAAsB;AACxB;;AAEA;EACE,qBAAqB;AACvB;AACA,cAAc;;AAEd,eAAe;AACf;EACE,eAAe;AACjB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,yBAAyB;EACzB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,eAAe;EACf,cAAc;EACd,eAAe;EACf,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,oBAAoB;EACpB,yBAAyB;EACzB,qBAAqB;AACvB;AACA,eAAe;;AAEf,cAAc;AACd;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA,YAAY;;AAEZ,eAAe;AACf;EACE,4BAA4B;EAC5B,aAAa;AACf;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,cAAc;EACd,aAAa;AACf;;AAEA;EACE,cAAc;EACd,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,6BAA6B;AAC/B;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,UAAU;EACV,4BAA4B;EAC5B,qBAAqB;EACrB,OAAO;AACT;;AAEA;EACE,mBAAmB;EACnB,4BAA4B;EAC5B,eAAe;AACjB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,eAAe;AACjB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,qBAAqB;EACrB,YAAY;AACd;;AAEA;EACE,yBAAyB;EACzB,oBAAoB;EACpB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B,YAAY;AACd;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;AACb;AACA,eAAe;;AAEf,iBAAiB;AACjB;EACE,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,iBAAiB;EACjB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,sBAAsB;AACxB;;AAEA;EACE,0CAA0C;AAC5C;;AAEA;EACE,0CAA0C;AAC5C;AACA,eAAe","sourcesContent":["/* reset start */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Mulish\", sans-serif;\n  letter-spacing: 0.1rem;\n}\n\nli {\n  list-style-type: none;\n}\n/* reset end */\n\n/* body start */\nbody {\n  font-size: 10px;\n}\n/* body end */\n\n/* header start */\nheader {\n  background-color: #d35400;\n  height: 3rem;\n}\n\n.container-title-logo {\n  display: flex;\n  justify-content: center;\n}\n\n.text-title-logo {\n  font-size: 1rem;\n  color: #f5f6fa;\n  cursor: pointer;\n  padding: 0.8rem;\n  margin-top: 0.2rem;\n}\n\n.text-title-logo:hover {\n  transition: all 0.2s;\n  background-color: #e67e22;\n  border-radius: 0.2rem;\n}\n/* header end */\n\n/* main start*/\nmain {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/* main end*/\n\n/* todo start */\n.container-todo-list {\n  border: 0.1rem solid #979393;\n  padding: 1rem;\n}\n\nlegend {\n  margin-left: auto;\n  margin-right: auto;\n  color: #4d4d4d;\n  padding: 1rem;\n}\n\n.title-todo-list {\n  color: #d35400;\n  font-size: 1.2rem;\n}\n\nform {\n  display: flex;\n  justify-content: space-around;\n}\n\ninput {\n  margin-left: 1rem;\n  margin-right: 1rem;\n  margin-bottom: 3rem;\n  padding: 0.4rem 1rem;\n  outline: 0;\n  border: 0.1rem solid #979393;\n  border-radius: 0.2rem;\n  flex: 1;\n}\n\n.container-todo {\n  margin-bottom: 2rem;\n  border: 0.1rem solid #979393;\n  padding: 0.5rem;\n}\n\n.title-todo {\n  font-size: 1rem;\n}\n\nli {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\nli p {\n  margin-bottom: 1rem;\n  font-size: 1rem;\n}\n/* todo end */\n\n/* button start */\nbutton {\n  border: none;\n  background-color: #d35400;\n  color: #f5f6fa;\n  font-weight: bold;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n}\n\nbutton:hover {\n  background-color: #e67e22;\n  transition: all 0.2s;\n  cursor: pointer;\n}\n\n.container-edit-delete-button {\n  display: flex;\n  justify-content: space-evenly;\n  width: 20rem;\n}\n\n.add-button {\n  margin-right: 1rem;\n}\n\n.edit-button {\n  margin-bottom: 1rem;\n  width: 7rem;\n}\n\n.delete-button {\n  width: 7rem;\n}\n/* button end */\n\n/* footer start */\nfooter {\n  height: 8rem;\n  background-color: #4d4d4d;\n  color: #f5f6fa;\n  font-size: 0.7rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nimg {\n  height: 1rem;\n  width: 1rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n\n.e {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n/* footer end */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
