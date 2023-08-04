@@ -2,7 +2,6 @@
 .vscode
 node_modules
 src
-.gitignore
 babel.config.js
 package-lock.json
 package.json

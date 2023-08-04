@@ -26,29 +26,150 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* reset start */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+li {
+  list-style-type: none;
 }
 /* reset end */
 
-/* header */
+/* body start */
+body {
+  font-size: 10px;
+}
+/* body end */
+
+/* header start */
 header {
   background-color: #d35400;
-}
-
-.container-title h1 {
-  font-size: 1rem;
-  padding: 1rem;
-  color: #f5f6fa;
-  cursor: pointer;
-  transition: all 0.2s;
-  width: 7rem;
   height: 3rem;
 }
 
-.container-title h1:hover {
-  background-color: #e67e22;
-  border-radius: 0.5rem;
+.container-title-logo {
+  display: flex;
+  justify-content: center;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA,gBAAgB;AAChB;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;AACA,cAAc;;AAEd,WAAW;AACX;EACE,yBAAyB;AAC3B;;AAEA;EACE,eAAe;EACf,aAAa;EACb,cAAc;EACd,eAAe;EACf,oBAAoB;EACpB,WAAW;EACX,YAAY;AACd;;AAEA;EACE,yBAAyB;EACzB,qBAAqB;AACvB","sourcesContent":["/* reset start */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n/* reset end */\n\n/* header */\nheader {\n  background-color: #d35400;\n}\n\n.container-title h1 {\n  font-size: 1rem;\n  padding: 1rem;\n  color: #f5f6fa;\n  cursor: pointer;\n  transition: all 0.2s;\n  width: 7rem;\n  height: 3rem;\n}\n\n.container-title h1:hover {\n  background-color: #e67e22;\n  border-radius: 0.5rem;\n}\n"],"sourceRoot":""}]);
+
+.text-title-logo {
+  font-size: 1rem;
+  color: #f5f6fa;
+  cursor: pointer;
+  padding: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.text-title-logo:hover {
+  transition: all 0.2s;
+  background-color: #e67e22;
+  border-radius: 0.2rem;
+}
+/* header end */
+
+/* main start*/
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* main end*/
+
+/* todo start */
+.container-todo-list {
+  border: 0.1rem solid black;
+  padding: 1rem;
+}
+
+legend {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.title-todo-list {
+  color: #d35400;
+  font-size: 1.2rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  padding: 0.4rem 1rem;
+  outline: 0;
+  border: 0.1rem solid #4444;
+  border-radius: 0.2rem;
+  flex: 1;
+}
+
+.container-todo {
+  margin-bottom: 2rem;
+  border: 0.1rem solid #333;
+  padding: 0.5rem;
+}
+
+.title-todo {
+  font-size: 1rem;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+/* todo end */
+
+/* button start */
+button {
+  border: none;
+  background-color: #d35400;
+  color: #f5f6fa;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  height: 2rem;
+}
+
+button:hover {
+  background-color: #e67e22;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.container-edit-delete-button {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20rem;
+}
+
+.add-button {
+  margin-right: 1rem;
+}
+
+.edit-button {
+  margin-bottom: 1rem;
+  width: 7rem;
+}
+
+.delete-button {
+  width: 7rem;
+}
+/* button end */
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA,gBAAgB;AAChB;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,2CAA2C;EAC3C,sBAAsB;AACxB;;AAEA;EACE,qBAAqB;AACvB;AACA,cAAc;;AAEd,eAAe;AACf;EACE,eAAe;AACjB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,yBAAyB;EACzB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,eAAe;EACf,cAAc;EACd,eAAe;EACf,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,oBAAoB;EACpB,yBAAyB;EACzB,qBAAqB;AACvB;AACA,eAAe;;AAEf,cAAc;AACd;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA,YAAY;;AAEZ,eAAe;AACf;EACE,0BAA0B;EAC1B,aAAa;AACf;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,cAAc;EACd,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,6BAA6B;AAC/B;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,UAAU;EACV,0BAA0B;EAC1B,qBAAqB;EACrB,OAAO;AACT;;AAEA;EACE,mBAAmB;EACnB,yBAAyB;EACzB,eAAe;AACjB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,eAAe;AACjB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,qBAAqB;EACrB,YAAY;AACd;;AAEA;EACE,yBAAyB;EACzB,oBAAoB;EACpB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B,YAAY;AACd;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;AACb;AACA,eAAe","sourcesContent":["/* reset start */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Roboto Condensed\", sans-serif;\n  letter-spacing: 0.1rem;\n}\n\nli {\n  list-style-type: none;\n}\n/* reset end */\n\n/* body start */\nbody {\n  font-size: 10px;\n}\n/* body end */\n\n/* header start */\nheader {\n  background-color: #d35400;\n  height: 3rem;\n}\n\n.container-title-logo {\n  display: flex;\n  justify-content: center;\n}\n\n.text-title-logo {\n  font-size: 1rem;\n  color: #f5f6fa;\n  cursor: pointer;\n  padding: 0.8rem;\n  margin-top: 0.2rem;\n}\n\n.text-title-logo:hover {\n  transition: all 0.2s;\n  background-color: #e67e22;\n  border-radius: 0.2rem;\n}\n/* header end */\n\n/* main start*/\nmain {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/* main end*/\n\n/* todo start */\n.container-todo-list {\n  border: 0.1rem solid black;\n  padding: 1rem;\n}\n\nlegend {\n  margin-left: auto;\n  margin-right: auto;\n  font-weight: bold;\n  padding: 1rem;\n}\n\n.title-todo-list {\n  color: #d35400;\n  font-size: 1.2rem;\n}\n\nform {\n  display: flex;\n  justify-content: space-around;\n}\n\ninput {\n  margin-left: 1rem;\n  margin-right: 1rem;\n  margin-bottom: 3rem;\n  padding: 0.4rem 1rem;\n  outline: 0;\n  border: 0.1rem solid #4444;\n  border-radius: 0.2rem;\n  flex: 1;\n}\n\n.container-todo {\n  margin-bottom: 2rem;\n  border: 0.1rem solid #333;\n  padding: 0.5rem;\n}\n\n.title-todo {\n  font-size: 1rem;\n}\n\nli {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\nli p {\n  margin-bottom: 1rem;\n  font-size: 1rem;\n}\n/* todo end */\n\n/* button start */\nbutton {\n  border: none;\n  background-color: #d35400;\n  color: #f5f6fa;\n  font-weight: bold;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n}\n\nbutton:hover {\n  background-color: #e67e22;\n  transition: all 0.2s;\n  cursor: pointer;\n}\n\n.container-edit-delete-button {\n  display: flex;\n  justify-content: space-evenly;\n  width: 20rem;\n}\n\n.add-button {\n  margin-right: 1rem;\n}\n\n.edit-button {\n  margin-bottom: 1rem;\n  width: 7rem;\n}\n\n.delete-button {\n  width: 7rem;\n}\n/* button end */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
