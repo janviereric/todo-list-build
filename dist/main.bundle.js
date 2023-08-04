@@ -56,7 +56,7 @@ header {
   font-size: 1rem;
   color: #f5f6fa;
   cursor: pointer;
-  padding: 0.8rem;
+  padding: 0.6rem;
   margin-top: 0.2rem;
 }
 
@@ -69,10 +69,11 @@ header {
 
 /* main start*/
 main {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 /* main end*/
 
@@ -92,6 +93,7 @@ legend {
 .title-todo-list {
   color: #d35400;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 form {
@@ -110,16 +112,6 @@ input {
   flex: 1;
 }
 
-.container-todo {
-  margin-bottom: 2rem;
-  border: 0.1rem solid #979393;
-  padding: 0.5rem;
-}
-
-.title-todo {
-  font-size: 1rem;
-}
-
 li {
   display: flex;
   flex-direction: column;
@@ -127,9 +119,58 @@ li {
   align-items: center;
 }
 
+li fieldset {
+  margin-bottom: 2rem;
+  border: 0.1rem solid #979393;
+  padding: 0.5rem;
+}
+
+.title-todo {
+  font-size: 0.8rem;
+}
+
+.number {
+  color: #d35400;
+  font-weight: bold;
+}
+
 li p {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgray;
+  font-weight: bold;
+  border-radius: 0.2rem;
+}
+
+.todo {
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 2.5rem;
+  border: 0.1rem solid #d35400;
+  position: absolute;
+}
+
+.done {
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 2.5rem;
+  background-color: #d35400;
+  position: absolute;
+}
+
+.text-todo {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.fa-square,
+.fa-square-check {
+  font-size: 1.2rem;
+  color: #d35400;
 }
 /* todo end */
 
@@ -142,6 +183,7 @@ button {
   padding: 0.5rem;
   border-radius: 0.2rem;
   height: 2rem;
+  font-size: 0.8rem;
 }
 
 button:hover {
@@ -153,7 +195,8 @@ button:hover {
 .container-edit-delete-button {
   display: flex;
   justify-content: space-evenly;
-  width: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .add-button {
@@ -161,12 +204,11 @@ button:hover {
 }
 
 .edit-button {
-  margin-bottom: 1rem;
-  width: 7rem;
+  width: 6rem;
 }
 
 .delete-button {
-  width: 7rem;
+  width: 6rem;
 }
 /* button end */
 
@@ -195,7 +237,7 @@ img {
   font-family: "Roboto Condensed", sans-seri;
 }
 /* footer end */
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA,gBAAgB;AAChB;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,iCAAiC;EACjC,sBAAsB;AACxB;;AAEA;EACE,qBAAqB;AACvB;AACA,cAAc;;AAEd,eAAe;AACf;EACE,eAAe;AACjB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,yBAAyB;EACzB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,eAAe;EACf,cAAc;EACd,eAAe;EACf,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,oBAAoB;EACpB,yBAAyB;EACzB,qBAAqB;AACvB;AACA,eAAe;;AAEf,cAAc;AACd;EACE,aAAa;EACb,aAAa;EACb,uBAAuB;EACvB,mBAAmB;AACrB;AACA,YAAY;;AAEZ,eAAe;AACf;EACE,4BAA4B;EAC5B,aAAa;AACf;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,cAAc;EACd,aAAa;AACf;;AAEA;EACE,cAAc;EACd,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,6BAA6B;AAC/B;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,UAAU;EACV,4BAA4B;EAC5B,qBAAqB;EACrB,OAAO;AACT;;AAEA;EACE,mBAAmB;EACnB,4BAA4B;EAC5B,eAAe;AACjB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,eAAe;AACjB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,qBAAqB;EACrB,YAAY;AACd;;AAEA;EACE,yBAAyB;EACzB,oBAAoB;EACpB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B,YAAY;AACd;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,mBAAmB;EACnB,WAAW;AACb;;AAEA;EACE,WAAW;AACb;AACA,eAAe;;AAEf,iBAAiB;AACjB;EACE,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,iBAAiB;EACjB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,sBAAsB;AACxB;;AAEA;EACE,0CAA0C;AAC5C;;AAEA;EACE,0CAA0C;AAC5C;AACA,eAAe","sourcesContent":["/* reset start */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Mulish\", sans-serif;\n  letter-spacing: 0.1rem;\n}\n\nli {\n  list-style-type: none;\n}\n/* reset end */\n\n/* body start */\nbody {\n  font-size: 10px;\n}\n/* body end */\n\n/* header start */\nheader {\n  background-color: #d35400;\n  height: 3rem;\n}\n\n.container-title-logo {\n  display: flex;\n  justify-content: center;\n}\n\n.text-title-logo {\n  font-size: 1rem;\n  color: #f5f6fa;\n  cursor: pointer;\n  padding: 0.8rem;\n  margin-top: 0.2rem;\n}\n\n.text-title-logo:hover {\n  transition: all 0.2s;\n  background-color: #e67e22;\n  border-radius: 0.2rem;\n}\n/* header end */\n\n/* main start*/\nmain {\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/* main end*/\n\n/* todo start */\n.container-todo-list {\n  border: 0.1rem solid #979393;\n  padding: 1rem;\n}\n\nlegend {\n  margin-left: auto;\n  margin-right: auto;\n  color: #4d4d4d;\n  padding: 1rem;\n}\n\n.title-todo-list {\n  color: #d35400;\n  font-size: 1.2rem;\n}\n\nform {\n  display: flex;\n  justify-content: space-around;\n}\n\ninput {\n  margin-left: 1rem;\n  margin-right: 1rem;\n  margin-bottom: 3rem;\n  padding: 0.4rem 1rem;\n  outline: 0;\n  border: 0.1rem solid #979393;\n  border-radius: 0.2rem;\n  flex: 1;\n}\n\n.container-todo {\n  margin-bottom: 2rem;\n  border: 0.1rem solid #979393;\n  padding: 0.5rem;\n}\n\n.title-todo {\n  font-size: 1rem;\n}\n\nli {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\nli p {\n  margin-bottom: 1rem;\n  font-size: 1rem;\n}\n/* todo end */\n\n/* button start */\nbutton {\n  border: none;\n  background-color: #d35400;\n  color: #f5f6fa;\n  font-weight: bold;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n}\n\nbutton:hover {\n  background-color: #e67e22;\n  transition: all 0.2s;\n  cursor: pointer;\n}\n\n.container-edit-delete-button {\n  display: flex;\n  justify-content: space-evenly;\n  width: 20rem;\n}\n\n.add-button {\n  margin-right: 1rem;\n}\n\n.edit-button {\n  margin-bottom: 1rem;\n  width: 7rem;\n}\n\n.delete-button {\n  width: 7rem;\n}\n/* button end */\n\n/* footer start */\nfooter {\n  height: 8rem;\n  background-color: #4d4d4d;\n  color: #f5f6fa;\n  font-size: 0.7rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nimg {\n  height: 1rem;\n  width: 1rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n\n.e {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n/* footer end */\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA,gBAAgB;AAChB;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,iCAAiC;EACjC,sBAAsB;AACxB;;AAEA;EACE,qBAAqB;AACvB;AACA,cAAc;;AAEd,eAAe;AACf;EACE,eAAe;AACjB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,yBAAyB;EACzB,YAAY;AACd;;AAEA;EACE,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,eAAe;EACf,cAAc;EACd,eAAe;EACf,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,oBAAoB;EACpB,yBAAyB;EACzB,qBAAqB;AACvB;AACA,eAAe;;AAEf,cAAc;AACd;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,iBAAiB;EACjB,oBAAoB;AACtB;AACA,YAAY;;AAEZ,eAAe;AACf;EACE,4BAA4B;EAC5B,aAAa;AACf;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,cAAc;EACd,aAAa;AACf;;AAEA;EACE,cAAc;EACd,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,6BAA6B;AAC/B;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,mBAAmB;EACnB,oBAAoB;EACpB,UAAU;EACV,4BAA4B;EAC5B,qBAAqB;EACrB,OAAO;AACT;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;EACnB,4BAA4B;EAC5B,eAAe;AACjB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,cAAc;EACd,iBAAiB;AACnB;;AAEA;EACE,mBAAmB;EACnB,iBAAiB;EACjB,aAAa;EACb,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;EACnB,2BAA2B;EAC3B,iBAAiB;EACjB,qBAAqB;AACvB;;AAEA;EACE,cAAc;EACd,aAAa;EACb,qBAAqB;EACrB,4BAA4B;EAC5B,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,aAAa;EACb,qBAAqB;EACrB,yBAAyB;EACzB,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;;EAEE,iBAAiB;EACjB,cAAc;AAChB;AACA,aAAa;;AAEb,iBAAiB;AACjB;EACE,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,iBAAiB;EACjB,eAAe;EACf,qBAAqB;EACrB,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,yBAAyB;EACzB,oBAAoB;EACpB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,6BAA6B;EAC7B,gBAAgB;EAChB,qBAAqB;AACvB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,WAAW;AACb;AACA,eAAe;;AAEf,iBAAiB;AACjB;EACE,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,iBAAiB;EACjB,aAAa;EACb,mBAAmB;EACnB,uBAAuB;AACzB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,sBAAsB;AACxB;;AAEA;EACE,0CAA0C;AAC5C;;AAEA;EACE,0CAA0C;AAC5C;AACA,eAAe","sourcesContent":["/* reset start */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Mulish\", sans-serif;\n  letter-spacing: 0.1rem;\n}\n\nli {\n  list-style-type: none;\n}\n/* reset end */\n\n/* body start */\nbody {\n  font-size: 10px;\n}\n/* body end */\n\n/* header start */\nheader {\n  background-color: #d35400;\n  height: 3rem;\n}\n\n.container-title-logo {\n  display: flex;\n  justify-content: center;\n}\n\n.text-title-logo {\n  font-size: 1rem;\n  color: #f5f6fa;\n  cursor: pointer;\n  padding: 0.6rem;\n  margin-top: 0.2rem;\n}\n\n.text-title-logo:hover {\n  transition: all 0.2s;\n  background-color: #e67e22;\n  border-radius: 0.2rem;\n}\n/* header end */\n\n/* main start*/\nmain {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 10rem;\n  margin-bottom: 10rem;\n}\n/* main end*/\n\n/* todo start */\n.container-todo-list {\n  border: 0.1rem solid #979393;\n  padding: 1rem;\n}\n\nlegend {\n  margin-left: auto;\n  margin-right: auto;\n  color: #4d4d4d;\n  padding: 1rem;\n}\n\n.title-todo-list {\n  color: #d35400;\n  font-size: 1.2rem;\n  font-weight: bold;\n}\n\nform {\n  display: flex;\n  justify-content: space-around;\n}\n\ninput {\n  margin-left: 1rem;\n  margin-right: 1rem;\n  margin-bottom: 3rem;\n  padding: 0.4rem 1rem;\n  outline: 0;\n  border: 0.1rem solid #979393;\n  border-radius: 0.2rem;\n  flex: 1;\n}\n\nli {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\nli fieldset {\n  margin-bottom: 2rem;\n  border: 0.1rem solid #979393;\n  padding: 0.5rem;\n}\n\n.title-todo {\n  font-size: 0.8rem;\n}\n\n.number {\n  color: #d35400;\n  font-weight: bold;\n}\n\nli p {\n  margin-bottom: 1rem;\n  font-size: 0.8rem;\n  padding: 1rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  background-color: lightgray;\n  font-weight: bold;\n  border-radius: 0.2rem;\n}\n\n.todo {\n  height: 1.2rem;\n  width: 1.2rem;\n  border-radius: 2.5rem;\n  border: 0.1rem solid #d35400;\n  position: absolute;\n}\n\n.done {\n  height: 1.2rem;\n  width: 1.2rem;\n  border-radius: 2.5rem;\n  background-color: #d35400;\n  position: absolute;\n}\n\n.text-todo {\n  margin-left: 3rem;\n  margin-right: 3rem;\n}\n\n.fa-square,\n.fa-square-check {\n  font-size: 1.2rem;\n  color: #d35400;\n}\n/* todo end */\n\n/* button start */\nbutton {\n  border: none;\n  background-color: #d35400;\n  color: #f5f6fa;\n  font-weight: bold;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n  font-size: 0.8rem;\n}\n\nbutton:hover {\n  background-color: #e67e22;\n  transition: all 0.2s;\n  cursor: pointer;\n}\n\n.container-edit-delete-button {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 2rem;\n  margin-bottom: 0.5rem;\n}\n\n.add-button {\n  margin-right: 1rem;\n}\n\n.edit-button {\n  width: 6rem;\n}\n\n.delete-button {\n  width: 6rem;\n}\n/* button end */\n\n/* footer start */\nfooter {\n  height: 8rem;\n  background-color: #4d4d4d;\n  color: #f5f6fa;\n  font-size: 0.7rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nimg {\n  height: 1rem;\n  width: 1rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n\n.e {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n/* footer end */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -723,7 +765,56 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 
+var ul = document.querySelector("ul");
+var todos = [{
+  text: "Je suis la Todo numéros 1",
+  done: false,
+  check: false
+}, {
+  text: "Je suis la Todo numéros 2",
+  done: true,
+  check: true
+}, {
+  text: "Je suis la Todo numéros 3",
+  done: true,
+  check: true
+}, {
+  text: "Je suis la Todo numéros 4",
+  done: true,
+  check: true
+}, {
+  text: "Je suis la Todo numéros 5",
+  done: true,
+  check: true
+}, {
+  text: "Je suis la Todo numéros 6",
+  done: true,
+  check: true
+}, {
+  text: "Je suis la Todo numéros 7",
+  done: true,
+  check: true
+}];
+var diplayTodo = function diplayTodo() {
+  var todosElement = todos.map(function (todo, index) {
+    return createTodoElement(todo, index);
+  });
+  ul.innerHTML = "";
+  ul.append.apply(ul, _toConsumableArray(todosElement));
+};
+var createTodoElement = function createTodoElement(todo, index) {
+  var li = document.createElement("li");
+  li.innerHTML = " \n  <fieldset class=\"container-todo\">\n  <legend class=\"title-todo\">\n    Ma t\xE2che n\xB0<span class=\"number\">".concat(index + 1, "</span> :\n  </legend>\n  <p>\n    <span class=\"").concat(todo.done ? "done" : "todo", "\"></span> \n    <span class=\"text-todo\">").concat(todo.text, "</span>\n    <span>").concat(todo.check ? "<i class='fa-regular fa-square-check'></i>" : "<i class='fa-regular fa-square'></i>", "</span>\n  </p>\n  <div class=\"container-edit-delete-button\">\n    <button class=\"edit-button\">Editer</button>\n    <button class=\"delete-button\">Supprimer</button>\n  </div>\n</fieldset>\n  ");
+  return li;
+};
+diplayTodo();
 })();
 
 /******/ })()
