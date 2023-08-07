@@ -773,6 +773,15 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 
 var ul = document.querySelector("ul");
+var form = document.querySelector("form");
+var input = document.querySelector("form > input");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  var value = input.value;
+  input.value = "";
+  addTodo(value);
+  diplayTodo();
+});
 var todos = [{
   text: "Je suis la Todo numéros 1",
   done: false,
@@ -813,6 +822,13 @@ var createTodoElement = function createTodoElement(todo, index) {
   var li = document.createElement("li");
   li.innerHTML = " \n  <fieldset class=\"container-todo\">\n  <legend class=\"title-todo\">\n    Ma t\xE2che n\xB0<span class=\"number\">".concat(index + 1, "</span> :\n  </legend>\n  <p>\n    <span class=\"").concat(todo.done ? "done" : "todo", "\"></span> \n    <span class=\"text-todo\">").concat(todo.text, "</span>\n    <span>").concat(todo.check ? "<i class='fa-regular fa-square-check'></i>" : "<i class='fa-regular fa-square'></i>", "</span>\n  </p>\n  <div class=\"container-edit-delete-button\">\n    <button class=\"edit-button\">Editer</button>\n    <button class=\"delete-button\">Supprimer</button>\n  </div>\n</fieldset>\n  ");
   return li;
+};
+var addTodo = function addTodo(text) {
+  todos.push({
+    text: text,
+    done: false,
+    check: false
+  });
 };
 diplayTodo();
 })();
