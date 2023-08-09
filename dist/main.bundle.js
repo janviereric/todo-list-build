@@ -880,12 +880,15 @@ var createTodoEditElement = function createTodoEditElement(todo, index) {
   return li;
 };
 var addTodo = function addTodo(text) {
-  todos.push({
-    text: text,
-    done: false,
-    check: false
-  });
-  displayTodo();
+  text = text.trim();
+  if (text) {
+    todos.push({
+      text: text,
+      done: false,
+      check: false
+    });
+    displayTodo();
+  }
 };
 var deleteTodo = function deleteTodo(index) {
   todos.splice(index, 1);
