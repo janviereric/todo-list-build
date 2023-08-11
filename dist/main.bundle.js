@@ -918,7 +918,7 @@ var addTodo = function addTodo(text) {
     small.classList.add("text-info-succes");
     small.classList.remove("text-info-danger");
     todos.push({
-      text: text,
+      text: "".concat(text[0].toUpperCase()).concat(text.slice(1)),
       done: false,
       check: false
     });
