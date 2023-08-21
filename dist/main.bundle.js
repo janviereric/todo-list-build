@@ -21,8 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* reset start */
-* {
+___CSS_LOADER_EXPORT___.push([module.id, `* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,11 +33,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* reset start */
 a {
   text-decoration: none;
 }
-
-li {
-  list-style-type: none;
-}
-/* reset end */
 
 /* body start */
 body {
@@ -127,30 +121,13 @@ input {
   flex: 1;
 }
 
-.text-info-danger {
-  color: #d63031;
-  font-weight: bold;
-}
-
-.text-info-none {
-  display: none;
-}
-
-.text-info-succes {
-  color: green;
-  font-weight: bold;
-}
-
-.container-text-info {
-  margin-left: 0.2rem;
-  margin-top: 0.2rem;
-}
-
 li {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 li fieldset {
@@ -262,11 +239,6 @@ li fieldset {
   margin-right: 0;
 }
 
-.container-edit-text-info {
-  margin-left: 2.7rem;
-  margin-top: 0.1rem;
-}
-
 .container-save-cancel-button {
   display: flex;
   justify-content: space-evenly;
@@ -338,6 +310,46 @@ li fieldset {
 }
 /* button end */
 
+/* small start */
+.container-text-info-rule {
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.container-text-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-text-info-edit {
+  /* margin-left: 2.7rem; */
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invalid {
+  color: #d63031;
+  font-weight: bold;
+}
+
+.invisible {
+  display: none;
+}
+
+.valid {
+  color: green;
+  font-weight: bold;
+}
+
+.emojis {
+  font-size: 1rem;
+  color: #4d4d4d;
+}
+/* small end */
+
 /* footer start */
 footer {
   height: 8rem;
@@ -363,7 +375,7 @@ img {
   font-family: "Roboto Condensed", sans-seri;
 }
 /* footer end */
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"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","sourcesContent":["/* reset start */\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Mulish\", sans-serif;\n  letter-spacing: 0.1rem;\n  cursor: default;\n}\n\na {\n  text-decoration: none;\n}\n\nli {\n  list-style-type: none;\n}\n/* reset end */\n\n/* body start */\nbody {\n  font-size: 10px;\n}\n/* body end */\n\n/* header start */\nheader {\n  background-color: #8395a7;\n  height: 3rem;\n}\n\n.container-title-logo {\n  display: flex;\n  justify-content: center;\n}\n\n.text-title-logo {\n  font-size: 1rem;\n  cursor: pointer;\n  padding: 0.6rem;\n  margin-top: 0.2rem;\n  color: #f5f6fa;\n}\n\n.text-title-logo:hover {\n  transition: all 0.2s;\n  color: #4d4d4d;\n  background-color: #c8d6e5;\n  border-radius: 0.2rem;\n}\n/* header end */\n\n/* main start*/\nmain {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 10rem;\n  margin-bottom: 30rem;\n}\n/* main end*/\n\n/* todo start */\n.container-todo-list {\n  margin-top: 5rem;\n  border: 0.1rem solid #979393;\n  padding: 1rem;\n  width: 40%;\n}\n\nlegend {\n  margin-left: auto;\n  margin-right: auto;\n  padding: 1rem;\n}\n\n.title-todo-list {\n  font-size: 1.2rem;\n  font-weight: bold;\n  color: #f5f6fa;\n  background-color: #8395a7;\n  border-radius: 0.2rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n}\n\nform {\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n  margin-bottom: 3rem;\n}\n\n.container-input-button {\n  display: flex;\n}\n\ninput {\n  margin-right: 0.5rem;\n  padding: 0.4rem 1rem;\n  outline: 0;\n  border: 0.1rem solid #979393;\n  border-radius: 0.2rem;\n  flex: 1;\n}\n\n.text-info-danger {\n  color: #d63031;\n  font-weight: bold;\n}\n\n.text-info-none {\n  display: none;\n}\n\n.text-info-succes {\n  color: green;\n  font-weight: bold;\n}\n\n.container-text-info {\n  margin-left: 0.2rem;\n  margin-top: 0.2rem;\n}\n\nli {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\nli fieldset {\n  margin-bottom: 2rem;\n  border: 0.1rem solid #979393;\n  padding: 0.5rem;\n  width: 100%;\n}\n\n.title-todo {\n  font-size: 0.8rem;\n}\n\n.number {\n  color: #05b562;\n  font-weight: bold;\n}\n\n.container-done-text-todo-check {\n  margin-bottom: 1rem;\n  font-size: 0.8rem;\n  padding: 1rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  background-color: rgb(240, 240, 240);\n  font-weight: bold;\n  border-radius: 0.2rem;\n  transition: all 0.2s;\n}\n\n.container-done-text-todo-check:hover {\n  background-color: linen;\n  border-radius: 0.2rem;\n}\n\n.todo {\n  height: 2rem;\n  width: 2rem;\n  border-radius: 2.5rem;\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-weight: bold;\n  font-size: 1rem;\n  color: #05b562;\n  border: 0.1rem solid #05b562;\n}\n\n.effect {\n  text-decoration: line-through;\n}\n\n.done {\n  height: 2rem;\n  width: 2rem;\n  border-radius: 2.5rem;\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-size: 1rem;\n  color: #f5f6fa;\n  background-color: #05b562;\n}\n\n.container-text-todo {\n  margin-left: 3rem;\n  margin-right: 1rem;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.fa-square {\n  font-size: 1.5rem;\n  cursor: pointer;\n  color: #4d4d4d;\n}\n\n.fa-square-check {\n  font-size: 1.5rem;\n  cursor: pointer;\n  color: #05b562;\n}\n\n.container-edit-delete-button {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 2rem;\n  margin-bottom: 0.5rem;\n}\n/* todo end */\n\n/* edit start */\n.edit-title-todo {\n  font-size: 0.8rem;\n}\n\n.container-edit-text-todo-input {\n  display: flex;\n}\n\n.container-edit-text-todo-input input {\n  margin-bottom: 0;\n  margin-left: 2.5rem;\n  margin-right: 0;\n}\n\n.container-edit-text-info {\n  margin-left: 2.7rem;\n  margin-top: 0.1rem;\n}\n\n.container-save-cancel-button {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 2rem;\n  margin-bottom: 0.5rem;\n}\n/* edit end */\n\n/* button start */\n.add-button {\n  border: none;\n  background-color: #05b562;\n  color: #f5f6fa;\n  font-weight: bold;\n  font-size: 0.8rem;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n  transition: all 0.2s;\n}\n\n.add-button:hover {\n  background-color: #05c46b;\n  cursor: pointer;\n}\n\n.edit-button,\n.save-button {\n  border: none;\n  background-color: #4a69bd;\n  color: #f5f6fa;\n  font-weight: bold;\n  font-size: 0.8rem;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n  width: 7rem;\n  margin-left: 1rem;\n  margin-right: 1rem;\n  transition: all 0.2s;\n}\n\n.edit-button:hover,\n.save-button:hover {\n  background-color: #718bd2;\n  cursor: pointer;\n}\n\n.delete-button,\n.cancel-button {\n  border: none;\n  background-color: #e84118;\n  color: #f5f6fa;\n  font-weight: bold;\n  font-size: 0.8rem;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n  width: 7rem;\n  margin-left: 1rem;\n  margin-right: 1rem;\n  transition: all 0.2s;\n}\n\n.delete-button:hover,\n.cancel-button:hover {\n  background-color: #ff5e36;\n  cursor: pointer;\n}\n/* button end */\n\n/* footer start */\nfooter {\n  height: 8rem;\n  background-color: #4d4d4d;\n  color: #f5f6fa;\n  font-size: 0.7rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nimg {\n  height: 1rem;\n  width: 1rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n\n.e {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n/* footer end */\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"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","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Mulish\", sans-serif;\n  letter-spacing: 0.1rem;\n  cursor: default;\n}\n\na {\n  text-decoration: none;\n}\n\n/* body start */\nbody {\n  font-size: 10px;\n}\n/* body end */\n\n/* header start */\nheader {\n  background-color: #8395a7;\n  height: 3rem;\n}\n\n.container-title-logo {\n  display: flex;\n  justify-content: center;\n}\n\n.text-title-logo {\n  font-size: 1rem;\n  cursor: pointer;\n  padding: 0.6rem;\n  margin-top: 0.2rem;\n  color: #f5f6fa;\n}\n\n.text-title-logo:hover {\n  transition: all 0.2s;\n  color: #4d4d4d;\n  background-color: #c8d6e5;\n  border-radius: 0.2rem;\n}\n/* header end */\n\n/* main start*/\nmain {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 10rem;\n  margin-bottom: 30rem;\n}\n/* main end*/\n\n/* todo start */\n.container-todo-list {\n  margin-top: 5rem;\n  border: 0.1rem solid #979393;\n  padding: 1rem;\n  width: 40%;\n}\n\nlegend {\n  margin-left: auto;\n  margin-right: auto;\n  padding: 1rem;\n}\n\n.title-todo-list {\n  font-size: 1.2rem;\n  font-weight: bold;\n  color: #f5f6fa;\n  background-color: #8395a7;\n  border-radius: 0.2rem;\n  padding-top: 0.2rem;\n  padding-bottom: 0.2rem;\n}\n\nform {\n  display: flex;\n  flex-direction: column;\n  margin-top: 1rem;\n  margin-bottom: 3rem;\n}\n\n.container-input-button {\n  display: flex;\n}\n\ninput {\n  margin-right: 0.5rem;\n  padding: 0.4rem 1rem;\n  outline: 0;\n  border: 0.1rem solid #979393;\n  border-radius: 0.2rem;\n  flex: 1;\n}\n\nli {\n  list-style-type: none;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin-bottom: 1rem;\n}\n\nli fieldset {\n  margin-bottom: 2rem;\n  border: 0.1rem solid #979393;\n  padding: 0.5rem;\n  width: 100%;\n}\n\n.title-todo {\n  font-size: 0.8rem;\n}\n\n.number {\n  color: #05b562;\n  font-weight: bold;\n}\n\n.container-done-text-todo-check {\n  margin-bottom: 1rem;\n  font-size: 0.8rem;\n  padding: 1rem;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  background-color: rgb(240, 240, 240);\n  font-weight: bold;\n  border-radius: 0.2rem;\n  transition: all 0.2s;\n}\n\n.container-done-text-todo-check:hover {\n  background-color: linen;\n  border-radius: 0.2rem;\n}\n\n.todo {\n  height: 2rem;\n  width: 2rem;\n  border-radius: 2.5rem;\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-weight: bold;\n  font-size: 1rem;\n  color: #05b562;\n  border: 0.1rem solid #05b562;\n}\n\n.effect {\n  text-decoration: line-through;\n}\n\n.done {\n  height: 2rem;\n  width: 2rem;\n  border-radius: 2.5rem;\n  position: absolute;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-size: 1rem;\n  color: #f5f6fa;\n  background-color: #05b562;\n}\n\n.container-text-todo {\n  margin-left: 3rem;\n  margin-right: 1rem;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.fa-square {\n  font-size: 1.5rem;\n  cursor: pointer;\n  color: #4d4d4d;\n}\n\n.fa-square-check {\n  font-size: 1.5rem;\n  cursor: pointer;\n  color: #05b562;\n}\n\n.container-edit-delete-button {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 2rem;\n  margin-bottom: 0.5rem;\n}\n/* todo end */\n\n/* edit start */\n.edit-title-todo {\n  font-size: 0.8rem;\n}\n\n.container-edit-text-todo-input {\n  display: flex;\n}\n\n.container-edit-text-todo-input input {\n  margin-bottom: 0;\n  margin-left: 2.5rem;\n  margin-right: 0;\n}\n\n.container-save-cancel-button {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 2rem;\n  margin-bottom: 0.5rem;\n}\n/* edit end */\n\n/* button start */\n.add-button {\n  border: none;\n  background-color: #05b562;\n  color: #f5f6fa;\n  font-weight: bold;\n  font-size: 0.8rem;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n  transition: all 0.2s;\n}\n\n.add-button:hover {\n  background-color: #05c46b;\n  cursor: pointer;\n}\n\n.edit-button,\n.save-button {\n  border: none;\n  background-color: #4a69bd;\n  color: #f5f6fa;\n  font-weight: bold;\n  font-size: 0.8rem;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n  width: 7rem;\n  margin-left: 1rem;\n  margin-right: 1rem;\n  transition: all 0.2s;\n}\n\n.edit-button:hover,\n.save-button:hover {\n  background-color: #718bd2;\n  cursor: pointer;\n}\n\n.delete-button,\n.cancel-button {\n  border: none;\n  background-color: #e84118;\n  color: #f5f6fa;\n  font-weight: bold;\n  font-size: 0.8rem;\n  padding: 0.5rem;\n  border-radius: 0.2rem;\n  height: 2rem;\n  width: 7rem;\n  margin-left: 1rem;\n  margin-right: 1rem;\n  transition: all 0.2s;\n}\n\n.delete-button:hover,\n.cancel-button:hover {\n  background-color: #ff5e36;\n  cursor: pointer;\n}\n/* button end */\n\n/* small start */\n.container-text-info-rule {\n  margin-left: 0.2rem;\n  margin-top: 0.2rem;\n}\n\n.container-text-info {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.container-text-info-edit {\n  /* margin-left: 2.7rem; */\n  margin-top: 0.5rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.invalid {\n  color: #d63031;\n  font-weight: bold;\n}\n\n.invisible {\n  display: none;\n}\n\n.valid {\n  color: green;\n  font-weight: bold;\n}\n\n.emojis {\n  font-size: 1rem;\n  color: #4d4d4d;\n}\n/* small end */\n\n/* footer start */\nfooter {\n  height: 8rem;\n  background-color: #4d4d4d;\n  color: #f5f6fa;\n  font-size: 0.7rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nimg {\n  height: 1rem;\n  width: 1rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n\n.e {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n/* footer end */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -909,24 +921,33 @@ form.addEventListener("submit", function (event) {
 });
 var addTodo = function addTodo(text) {
   text = text.trim();
-  var small = document.querySelector("small");
+  var textInfoRule = document.querySelector(".text-info-rule");
   if (text.length > 4 && text.length < 101) {
-    small.classList.add("text-info-none");
-    small.classList.remove("text-info-danger");
+    textInfoRule.classList.remove("invalid");
+    textInfoRule.classList.add("invisible");
     todos.push({
       text: "".concat(text[0].toUpperCase()).concat(text.slice(1)),
       done: false,
-      check: false
+      effect: false,
+      check: false,
+      editMode: false,
+      add: true,
+      success: false,
+      failure: false,
+      rule: false,
+      update: false,
+      warning: false,
+      cancel: false
     });
     displayTodo();
   } else {
-    small.classList.add("text-info-danger");
-    small.classList.remove("text-info-none");
-    small.innerHTML = "Le champs doit contenir entre 5 et 100 caractères";
+    textInfoRule.classList.remove("invisible");
+    textInfoRule.classList.add("invalid");
+    textInfoRule.innerHTML = "Le champs doit contenir entre 5 et 100 caractères.";
     setTimeout(function () {
-      small.classList.remove("text-info-danger");
-      small.classList.add("text-info-none");
-    }, 10000);
+      textInfoRule.classList.remove("invalid");
+      textInfoRule.classList.add("invisible");
+    }, 5000);
   }
 };
 var todos = [{
@@ -934,13 +955,27 @@ var todos = [{
   done: false,
   effect: false,
   check: false,
-  editMode: false
+  editMode: false,
+  add: false,
+  success: false,
+  failure: false,
+  rule: false,
+  update: false,
+  warning: false,
+  cancel: false
 }, {
   text: "Je suis la Todo numéros 2",
   done: false,
   effect: false,
   check: false,
-  editMode: false
+  editMode: false,
+  add: false,
+  success: false,
+  failure: false,
+  rule: false,
+  update: false,
+  warning: false,
+  cancel: false
 }];
 var displayTodo = function displayTodo() {
   var todosElement = todos.map(function (todo, index) {
@@ -955,7 +990,7 @@ var displayTodo = function displayTodo() {
 };
 var createTodoElement = function createTodoElement(todo, index) {
   var li = document.createElement("li");
-  li.innerHTML = " \n  <fieldset class=\"container-todo\">\n  <legend class=\"title-todo\">\n    Ma t\xE2che n\xB0<span class=\"number\">".concat(index + 1, "</span> :\n  </legend>\n  <div class=\"container-done-text-todo-check\">\n    <span class=\"").concat(todo.done ? "done" : "todo", "\"> ").concat(todo.done ? "ok" : index + 1, "</span> \n    <div class=\"container-text-todo\">\n      <p class=\"text-todo ").concat(todo.effect ? "effect" : "", "\">").concat(todo.text, "</p>\n    </div>\n    <span>").concat(todo.check ? "<i class='fa-regular fa-square-check'></i>" : "<i class='fa-regular fa-square'></i>", "</span>\n  </div>\n  <div class=\"container-edit-delete-button\">\n    <button class=\"edit-button\">Editer</button>\n    <button class=\"delete-button\">Supprimer</button>\n  </div>\n</fieldset>\n  ");
+  li.innerHTML = " \n    <fieldset>\n      <legend class=\"title-todo\">\n        Ma t\xE2che n\xB0<span class=\"number\">".concat(index + 1, "</span> :\n      </legend>\n      <div class=\"container-done-text-todo-check\">\n        <span class=\"").concat(todo.done ? "done" : "todo", "\"> ").concat(todo.done ? "ok" : index + 1, "</span> \n        <div class=\"container-text-todo\">\n          <p class=\"text-todo ").concat(todo.effect ? "effect" : "", "\">").concat(todo.text, "</p>\n        </div>\n        <span>").concat(todo.check ? "<i class='fa-regular fa-square-check'></i>" : "<i class='fa-regular fa-square'></i>", "</span>\n      </div>\n      <div class=\"container-text-info\">\n        <small id=\"text-info-add\" class=\"invisible\">").concat(todo.add ? "Nouvelle Todo ajouté." : "", "</small>\n        <small id=\"text-info-success\" class=\"invisible\">").concat(todo.success ? "Bravo, la Todo a été accompli <i class='emojis fa-regular fa-face-laugh-beam'></i>" : "", "</small>\n        <small id=\"text-info-failure\" class=\"invisible\">").concat(todo.failure ? "Mince, la Todo n'a pas été accompli <i class='emojis fa-regular fa-face-sad-tear'></i>" : "", "</small>\n        <small id=\"text-info-update\" class=\"invisible\"> ").concat(todo.update ? "La Todo a été mise à jour avec succès." : "", "</small>\n        <small id=\"text-info-cancel\" class=\"invisible\">").concat(todo.cancel ? "Modification en cours annulé." : "", "</small>\n      </div>\n      <div class=\"container-edit-delete-button\">\n        <button class=\"edit-button\">Editer</button>\n        <button class=\"delete-button\">Supprimer</button>\n      </div>\n    </fieldset>\n  ");
   var editButton = li.querySelector(".edit-button");
   editButton.addEventListener("click", function (event) {
     event.stopPropagation();
@@ -968,40 +1003,100 @@ var createTodoElement = function createTodoElement(todo, index) {
   });
   var faRegular = li.querySelector(".fa-regular");
   faRegular.addEventListener("click", function (event) {
+    event.stopPropagation();
     toggleTodo(index);
   });
+  var textInfoAdd = li.querySelector("#text-info-add");
+  var textInfoSuccess = li.querySelector("#text-info-success");
+  var textInfoFailure = li.querySelector("#text-info-failure");
+  var textInfoUpdate = li.querySelector("#text-info-update");
+  var textInfoCancel = li.querySelector("#text-info-cancel");
+  if (todo.add) {
+    textInfoAdd.classList.add("valid");
+    textInfoAdd.classList.remove("invisible");
+    todo.add = false;
+    setTimeout(function () {
+      textInfoAdd.classList.remove("valid");
+      textInfoAdd.classList.add("invisible");
+    }, 2000);
+  }
+  if (todo.check) {
+    if (!todo.editMode) {
+      todo.failure = false;
+      todo.success = false;
+      todo.cancel = false;
+      textInfoSuccess.classList.add("valid");
+      textInfoSuccess.classList.remove("invisible");
+      setTimeout(function () {
+        textInfoSuccess.classList.remove("valid");
+        textInfoSuccess.classList.add("invisible");
+      }, 2000);
+    }
+  } else {
+    todo.success = false;
+    todo.failure = false;
+    todo.cancel = false;
+    textInfoFailure.classList.add("invalid");
+    textInfoFailure.classList.remove("invisible");
+    setTimeout(function () {
+      textInfoFailure.classList.remove("invalid");
+      textInfoFailure.classList.add("invisible");
+    }, 2000);
+  }
+  if (!todo.editMode) {
+    if (todo.update) {
+      todo.cancel = false;
+      todo.update = false;
+      todo.warning = false;
+      textInfoUpdate.classList.add("valid");
+      textInfoUpdate.classList.remove("invisible");
+      setTimeout(function () {
+        textInfoUpdate.classList.remove("valid");
+        textInfoUpdate.classList.add("invisible");
+      }, 2000);
+    } else {
+      textInfoCancel.classList.add("invalid");
+      textInfoCancel.classList.remove("invisible");
+      setTimeout(function () {
+        textInfoCancel.classList.remove("invalid");
+        textInfoCancel.classList.add("invisible");
+      }, 2000);
+    }
+  }
   return li;
 };
 var createTodoEditElement = function createTodoEditElement(todo, index) {
   var li = document.createElement("li");
-  li.innerHTML = "\n  <fieldset class=\"container-edit-todo\">\n  <legend class=\"edit-title-todo\">\n    Ma t\xE2che n\xB0<span class=\"number\">".concat(index + 1, "</span> :\n  </legend>\n  <div class=\"container-edit-text-todo-input-text-info\">\n    <div class=\"container-edit-text-todo-input\">\n      <span class=\"todo\">").concat(index + 1, "</span> \n      <input type=\"text\" />\n    </div>\n    <div class=\"container-edit-text-info\">\n      <small></small>\n    </div>\n  </div>\n  <div class=\"container-save-cancel-button\">\n    <button class=\"save-button\">Sauvegarder</button>\n    <button class=\"cancel-button\">Annuler</button>\n  </div>\n</fieldset>\n  ");
+  li.innerHTML = "\n  <fieldset>\n    <legend class=\"edit-title-todo\">\n      Ma t\xE2che n\xB0<span class=\"number\">".concat(index + 1, "</span> :\n    </legend>\n    <div class=\"container-edit-text-todo-input\">\n      <span class=\"todo\">").concat(index + 1, "</span> \n      <input type=\"text\" />\n    </div>\n    <div class=\"container-text-info-edit\">\n      <small class=\"text-info-rule-edit\"></small>\n      <small id=\"text-info-warning\" class=\"invisible\">").concat(todo.warning ? "Veuillez modifier la Todo ou 'Annuler'." : "", "</small>\n    </div>\n    <div class=\"container-save-cancel-button\">\n      <button class=\"save-button\">Sauvegarder</button>\n      <button class=\"cancel-button\">Annuler</button>\n    </div>\n  </fieldset>\n  ");
   var input = li.querySelector("input");
   input.value = todo.text;
-  var small = li.querySelector("small");
   var saveButton = li.querySelector(".save-button");
   saveButton.addEventListener("click", function (event) {
     if (input.value.length > 4 && input.value.length < 101) {
-      small.classList.add("text-info-none");
-      small.classList.remove("text-info-danger");
       if (input.value != todo.text) {
         editTodo(index, input);
       } else {
-        todos[index].editMode = false;
-        displayTodo();
+        var textInfoWarning = li.querySelector("#text-info-warning");
+        textInfoWarning.classList.add("invalid");
+        textInfoWarning.classList.remove("invisible");
+        setTimeout(function () {
+          textInfoWarning.classList.remove("invalid");
+          textInfoWarning.classList.add("invisible");
+        }, 2000);
       }
     } else {
-      small.classList.add("text-info-danger");
-      small.classList.remove("text-info-none");
-      small.innerHTML = "Le champs doit contenir entre 5 et 100 caractères";
+      var textInfoRuleEditMode = li.querySelector(".text-info-rule-edit");
+      textInfoRuleEditMode.classList.remove("invisible");
+      textInfoRuleEditMode.classList.add("invalid");
+      textInfoRuleEditMode.innerHTML = "Le champs doit contenir entre 5 et 100 caractères.";
       setTimeout(function () {
-        small.classList.remove("text-info-danger");
-        small.classList.add("text-info-none");
-      }, 10000);
+        textInfoRuleEditMode.classList.remove("invalid");
+        textInfoRuleEditMode.classList.add("invisible");
+      }, 3000);
     }
   });
   var cancelButton = li.querySelector(".cancel-button");
   cancelButton.addEventListener("click", function (event) {
-    event.stopPropagation();
     toggleEditMode(index);
   });
   return li;
@@ -1010,6 +1105,8 @@ var toggleTodo = function toggleTodo(index) {
   todos[index].done = !todos[index].done;
   todos[index].effect = !todos[index].effect;
   todos[index].check = !todos[index].check;
+  todos[index].success = !todos[index].success;
+  todos[index].failure = !todos[index].failure;
   displayTodo();
 };
 var deleteTodo = function deleteTodo(index) {
@@ -1018,6 +1115,12 @@ var deleteTodo = function deleteTodo(index) {
 };
 var toggleEditMode = function toggleEditMode(index) {
   todos[index].editMode = !todos[index].editMode;
+  todos[index].cancel = !todos[index].cancel;
+  todos[index].warning = !todos[index].warning;
+  todos[index].update = !todos[index].update;
+  todos[index].cancel = true;
+  todos[index].success = false;
+  todos[index].failure = false;
   displayTodo();
 };
 var editTodo = function editTodo(index, input) {
