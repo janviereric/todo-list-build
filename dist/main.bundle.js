@@ -1108,6 +1108,32 @@ var createTodoEditElement = function createTodoEditElement(todo, index) {
   cancelButton.addEventListener("click", function (event) {
     toggleEditMode(index);
   });
+  input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      if (input.value.length > 4 && input.value.length < 101) {
+        if (input.value != todo.text) {
+          editTodo(index, input);
+        } else {
+          var textInfoWarning = li.querySelector("#text-info-warning");
+          textInfoWarning.classList.add("info");
+          textInfoWarning.classList.remove("invisible");
+          setTimeout(function () {
+            textInfoWarning.classList.remove("info");
+            textInfoWarning.classList.add("invisible");
+          }, 2000);
+        }
+      } else {
+        var textInfoRuleEditMode = li.querySelector("#text-info-input");
+        textInfoRuleEditMode.classList.remove("invisible");
+        textInfoRuleEditMode.classList.add("invalid");
+        textInfoRuleEditMode.innerHTML = "Le champs doit contenir entre 5 et 100 caractères.";
+        setTimeout(function () {
+          textInfoRuleEditMode.classList.remove("invalid");
+          textInfoRuleEditMode.classList.add("invisible");
+        }, 3000);
+      }
+    }
+  });
   return li;
 };
 var deleteTodoElement = function deleteTodoElement(todo, index) {
